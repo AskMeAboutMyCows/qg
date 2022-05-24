@@ -3,7 +3,7 @@ from django.db import models
 from wagtail.models import Page
 from wagtail.fields import RichTextField
 from wagtail.admin.panels import FieldPanel
-
+from wagtail.search import index
 # Create your models here.
 
 #for index page
@@ -33,3 +33,4 @@ class BlogPage(Page):
     
     # getting a NameError: name 'index' is not defined in this file 
     # because of this i cannot update the database
+    # ... this was fixed with a import statement^^^
