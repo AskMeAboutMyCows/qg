@@ -15,8 +15,8 @@ class BlogIndexPage(Page):
     ]
     
   #for individual blog page
-    class BlogPage(Page):
-        date = models.DateField("Post date")
+class BlogPage(Page):
+    date = models.DateField("Post date")
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
 
@@ -30,3 +30,6 @@ class BlogIndexPage(Page):
         FieldPanel('intro'),
         FieldPanel('body', classname="full"),
     ]
+    
+    # getting a NameError: name 'index' is not defined in this file 
+    # because of this i cannot update the database
