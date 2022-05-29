@@ -1,3 +1,4 @@
+#this file is used to create the blog// however, it is not used in the project
 from django.db import models
 
 from modelcluster.fields import ParentalKey
@@ -60,3 +61,4 @@ class BlogPageRelatedLink(Orderable):
         FieldPanel('name'),
         FieldPanel('url'),
     ]
+#
